@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Entities", "src\MiniATM.Entities\MiniATM.Entities.csproj", "{CEBBB74B-13BA-4C3E-BADD-1773C2511158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Infrastructure", "src\MiniATM.Infrastructure\MiniATM.Infrastructure.csproj", "{E3875893-960C-4859-8FD9-B2EF8B6FA973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.UseCase", "src\MiniATM.UseCase\MiniATM.UseCase.csproj", "{E3A4651C-EFB2-4D0E-8688-6C1BC1002DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Infrastructure.SqlServer", "MiniATM.Infrastructure.SqlServer\MiniATM.Infrastructure.SqlServer.csproj", "{10BE63ED-BDA3-46E6-A815-80143A213805}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEBBB74B-13BA-4C3E-BADD-1773C2511158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBBB74B-13BA-4C3E-BADD-1773C2511158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBBB74B-13BA-4C3E-BADD-1773C2511158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBBB74B-13BA-4C3E-BADD-1773C2511158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3875893-960C-4859-8FD9-B2EF8B6FA973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3875893-960C-4859-8FD9-B2EF8B6FA973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3875893-960C-4859-8FD9-B2EF8B6FA973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3875893-960C-4859-8FD9-B2EF8B6FA973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A4651C-EFB2-4D0E-8688-6C1BC1002DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A4651C-EFB2-4D0E-8688-6C1BC1002DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A4651C-EFB2-4D0E-8688-6C1BC1002DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A4651C-EFB2-4D0E-8688-6C1BC1002DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BE63ED-BDA3-46E6-A815-80143A213805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BE63ED-BDA3-46E6-A815-80143A213805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BE63ED-BDA3-46E6-A815-80143A213805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BE63ED-BDA3-46E6-A815-80143A213805}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

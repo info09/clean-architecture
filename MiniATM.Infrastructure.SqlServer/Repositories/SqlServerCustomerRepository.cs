@@ -1,13 +1,25 @@
-﻿using MiniATM.Entities;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using MiniATM.Infrastructure.SqlServer.Repositories.DataContext;
 using MiniATM.UseCase.Repositories;
 
 namespace MiniATM.Infrastructure.SqlServer.Repositories
 {
     public class SqlServerCustomerRepository : ICustomerRepository
     {
-        public Task<Customer?> FindByIdAsync(Guid id)
+        private readonly MiniATMDbContext _context;
+        private readonly IMapper _mapper;
+
+        public SqlServerCustomerRepository(MiniATMDbContext context, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _mapper = mapper;
+        }
+
+        public async Task<Entities.Customer?> FindByIdAsync(Guid id)
+        {
+            var customer = await _context.Customers.Where(i => i.Id == id).FirstOrDefaultAsync();
+            return _mapper.Map<Entities.Customer>(customer);
         }
     }
 }
